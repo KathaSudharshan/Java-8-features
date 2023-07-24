@@ -29,8 +29,10 @@ It provides clear and short way to represent a method of Functional interface. H
 Lambda Expression used to provide the implemenation of functional interface and no need of overriding method proto type again for implementation. Helps to extract objects/data from collection and filters.
 
 Lambda Expression Syntax
- 
+
+---bash 
  (arguments) -> {//implemenation logic}
+---
 
 There are 3 types of lambda expression paramters as below,
 
@@ -40,24 +42,28 @@ There are 3 types of lambda expression paramters as below,
 
 Zero/default Parameter:
 
+---bash
 () -> {
        //implementation Logic
 	   System.out.println("Lambda zero parameter");
       }
-	  
-One Parameter:
+---	  
+Single Parameter:
 
+---bash
 (data) -> {
        //implementation Logic
 	   System.out.println("Lambda expression with one parameter as " +data);
       }
-	  
+---	  
 Multiple Parameters:
 
+---bash
 (name,age) -> {
        //implementation Logic
 	   System.out.println("Lambda expression with multiple parameter as " + data + "," + age);
       }
+---	  
 Refere sample code for more info..
 
 
