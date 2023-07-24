@@ -1,9 +1,9 @@
 # Java-8-features
 Java 8 features and its POCs (proof of concepts)
 
-##Introduction
+## Introduction
 This docuement is to discuss about JAVA 8(1.8) New features and enahncements of existing features.
-###JAVA 8 Features
+### JAVA 8 Features
 Below are the JAVA 8 new features and enhacements,
 1. Lambda Expressions
 2. forEach() in Iterable interfaces
@@ -61,7 +61,7 @@ Multiple Parameters:
 Refere sample code for more info..
 
 
-### 1. forEach() for Iterating Collection
+### 2. forEach() for Iterating Collection
 
 forEach() method is a Java 8 new feature and this method is used for iterating data from collections.
 
