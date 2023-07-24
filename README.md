@@ -22,5 +22,46 @@ Below are the JAVA 8 new features and enhacements,
 15. Java IO enhancements
 16. Parllel Array Sorting
 
-### Lambda Expressions
+### 1. Lambda Expression
+Lambda Expression is a new feature which is introduced in Java 8 version. 
+It provides clear and short way to represent a method of Functional interface. Having one abstract method in interface class is known as Functional inteface. 
+
+Lambda Expression used to provide the implemenation of functional interface and no need of overriding method proto type again for implementation. Helps to extract objects/data from collection and filters.
+
+Lambda Expression Syntax
+ 
+ (arguments) -> {//implemenation logic}
+
+There are 3 types of lambda expression paramters as below,
+
+1. Zero or default parameter
+2. one parameter
+3. mutiple parameter(morethan one parameter)
+
+Zero/default Parameter:
+
+() -> {
+       //implementation Logic
+	   System.out.println("Lambda zero parameter");
+      }
+	  
+One Parameter:
+
+(data) -> {
+       //implementation Logic
+	   System.out.println("Lambda expression with one parameter as " +data);
+      }
+	  
+Multiple Parameters:
+
+(name,age) -> {
+       //implementation Logic
+	   System.out.println("Lambda expression with multiple parameter as " + data + "," + age);
+      }
+Refere sample code for more info..
+
+
+### 1. forEach() for Iterating Collection
+
+forEach() method is a Java 8 new feature and this method is used for iterating data from collections.
 
