@@ -134,6 +134,117 @@ dog
 ```
 refer java code for more examples
 
+### 3. Functional Interface
+
+Funtcional Interface is Java 8 new feature. Having only one abstract method(Single Abstract method) in interfaces is called as Functional Interface. And an interface can have default and static methods along  with single abstract method.
+
+Syntax
+```bash
+public Interace Vehicle{
+   void engine();
+}
+```
+Functional interfaces can be represented using @FunctionalInterface annotation.
+
+Functional interfaces can be extended with other interfaces if extended interface does not have any abstarct method. Othewise throws compile time error.
+
+Example
+```bash
+@FunctionalInterface
+public interface Vehicle{
+   void engine();
+   default void info() {
+//Functional interface can have default, static and existing objects methods
+		System.out.println("Vehicle info");
+	}
+
+}
+
+public class Car implements Vehicle{
+
+ @Override
+ public void engine(){
+   System.out.printLn("Car Engine");
+ }
+ public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        Car car=new Car();
+        
+        car.engine();
+        car.info();
+	}
+}
+
+Output:
+Car Engine
+Vehicle info
+```
+Refer source code for more examples
+### 3. Method Reference
+Method reference is one of the new Java 8 feature and it is used in Functional interace to reference a method and easy to use in Lamba expression. In 3 ways Method references can be differentiated.
+
+1. Static Method reference
+2. Instant Method Reference
+3. Constructor Method Reference
+
+Static Method Reference syntax
+```bash
+classname::staticMethodName
+```
+Example
+```bash
+@FunctionalInterface
+public interface Vehicle{
+  void engine();
+}
+
+pulic class Bus{
+ 
+ public static void Info(){
+  System.out.println("Bus Info");
+ }
+ public static void main(String[] args){
+  
+   Vehicle vehicle=Bus::Info;
+   vehicle.engine();
+ }
+}
+
+Output:
+Bus Info
+```
+
+Instant Method Reference:
+
+Syntax
+```bash
+classObject::instanceMethodName
+```
+Example
+```bash
+pulic class Bike{
+ 
+ public void Info(){
+  System.out.println("Bike Info");
+ }
+ public static void main(String[] args){
+  Bike bike=new Bike();
+  //method reference using instance method 
+  Vehicle vehicle=bike::Info;
+   vehicle.engine();
+  //Instance object creation along with instance method reference
+ Vehicle bikeVehicle=new Bike()::Info;
+     bikeVehicle.engine():
+
+ }
+}
+
+Output:
+Bike Info
+Bike Info
+
+```
+
 
 
 
