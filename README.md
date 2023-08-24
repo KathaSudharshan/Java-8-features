@@ -244,8 +244,38 @@ Bike Info
 Bike Info
 
 ```
+Constructor Reference
 
+Syntax
+```bash
+className::new
+```
+Example
+```bash
+@FunctionalInterface
+public interface Animal{
+	Wild info(String str);
+}
+public class Wild {
+	
+	Wild(String str){
+		System.out.println(str);
+	}
 
+}
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       Animal animal = Wild::new;
+       animal.info("Wild Animal");
+	}
+
+}
+
+Output:
+Wild Animal
+```
 
 
 
